@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-DOM'
+import Monsters from './Monsters'
 
 export default class App extends Component {
     render() {
         return (
             <div>
-                <h1>hello</h1>
+                <Monsters />
             </div>
         )
     }
