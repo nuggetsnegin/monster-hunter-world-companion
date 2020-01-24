@@ -9,14 +9,15 @@ const Monsters = () =>{
         fetch('http://mhw-db.com/monsters').then(
             results => results.json() /*if we get the results back from the promise put it in json*/
         ).then(
-            monsterData => {
-                setMonsterList(monsterData)
+            monsterData =>{
+                setMonsterList(monsterData);
             }
         )
-    });
-    
+    },[]); /*dependancy for useEffect - because its empty it will run only once per render*/
+    console.log(monsterList)
 
     return (
+
 
         <div className="monsters">
 
